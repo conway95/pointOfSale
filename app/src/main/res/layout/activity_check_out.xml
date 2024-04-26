@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/checkOutItemsTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R60000"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/cashEt"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="52dp"
+        />
+
+    <EditText
+        android:id="@+id/cashEt"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/checkOutItemsTotal"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_input"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/checkOutChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R30000"
+        android:textColor="@color/red"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cashEt"
+        />
+
+    <Button
+        android:id="@+id/cash0_1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R0.10"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/checkOutChange"
+        />
+
+    <Button
+        android:id="@+id/cash0_2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R0.20"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkOutChange"
+        />
+
+    <Button
+        android:id="@+id/cash0_5Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R0.50"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/checkOutChange"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/cashR1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R1.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/cash0_1Btn"
+        />
+
+    <Button
+        android:id="@+id/cashR2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R2.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/cash0_2Btn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/cashR5Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R5.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/cash0_5Btn"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/cashR10Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R10.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/cashR1Btn"
+        />
+
+    <Button
+        android:id="@+id/cashR20Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R20.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/cashR2Btn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/cashR50Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R50.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/cashR5Btn"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/cashR200Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R200.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/cashR10Btn"
+        />
+
+    <Button
+        android:id="@+id/cashClearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Clear"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/cashR20Btn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/cashR100Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="R100.00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/cashR50Btn"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cashR100Btn"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/baseline_done_all_24"
+        android:backgroundTintMode="multiply"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/addProductTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Products"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/backIb"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@color/black"
+            />
+
+        <Button
+            android:id="@+id/addBarcodeProductBtn"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/addProductTitleTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Scan Barcode"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:backgroundTint="#E1C16E"
+            />
+
+        <EditText
+            android:id="@+id/barcodeEd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/addBarcodeProductBtn"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:hint=" Barcode"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#ADD8E6"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custom_barcode_icon"
+            android:singleLine="true"
+            android:editable="false"
+            />
+
+        <EditText
+            android:id="@+id/productNameEd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/barcodeEd"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custom_input"
+            android:hint=" Product Name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#ADD8E6"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custom_round_blender_24_icon"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/productCategoryEd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/productNameEd"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custom_input"
+            android:hint=" Product Category "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#ADD8E6"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custome_baseline_category_24"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/prodDescriptionEd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/productCategoryEd"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custom_input"
+            android:hint=" Description"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#ADD8E6"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custom_baseline_aod_24_icon"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/productPriceEd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/prodDescriptionEd"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custom_input"
+            android:hint=" Price"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#ADD8E6"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custom_baeline_currency_exchange_24_icon"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/productQuantityEd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/productPriceEd"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custom_input"
+            android:hint=" Quantity"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#ADD8E6"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custome_baseline_123_24"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            />
+
+        <Button
+            android:id="@+id/addProductBtn"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/productQuantityEd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Add Product"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:backgroundTint="#E1C16E"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

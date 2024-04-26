@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".dashboard">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/dMakeSaleBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Sales"
+        android:textColor="@color/white"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/ProductsBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Products"
+        android:textColor="@color/white"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:textSize="19dp"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/historyBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Stock Taking"
+        android:textColor="@color/white"
+        android:layout_below="@+id/dMakeSaleBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/SettingsBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ProductsBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/ChartsBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Charts"
+        android:textColor="@color/white"
+        android:layout_below="@+id/historyBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:layout_below="@+id/SettingsBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

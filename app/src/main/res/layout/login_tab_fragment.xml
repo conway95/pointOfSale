@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vie_bg">
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_input"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textColorHint="#ADD8E6"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_round_blender_24_icon"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userEmail"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_input"
+        android:hint=" Password"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textColorHint="#ADD8E6"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_round_blender_24_icon"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/userPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="#E1C16E"
+        />
+
+</RelativeLayout>

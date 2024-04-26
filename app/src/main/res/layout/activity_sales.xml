@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesActivity"
+    android:background="@color/black">
+
+    <ScrollView
+        android:id="@+id/scrollid"
+        android:layout_width="250dp"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/productsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products List"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ScrollView
+                android:id="@+id/scrollProductsSale"
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                android:layout_below="@+id/productsTitle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/vie_bg">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/viewAllProductsSale_rv"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/topMenus"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        >
+
+        <EditText
+            android:id="@+id/searchEt"
+            android:layout_width="297dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:hint="Search"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/searchbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="#FF0000"
+            android:text="Search"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topMenus"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/scrollid"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/alltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_margin="3dp"
+            />
+
+        <Button
+            android:id="@+id/newtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/alltv"
+            />
+
+        <Button
+            android:id="@+id/favtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/newtv"
+            />
+
+        <Button
+            android:id="@+id/carte1tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category 1"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/favtv"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cartScroll"
+        android:layout_width="150dp"
+        android:layout_height="600dp"
+        android:layout_below="@id/topMenus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/cartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart List"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rvLayout"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_below="@+id/cartTitle"
+            android:layout_marginTop="5dp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewAllProductsCart_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/totalPriceItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/rvLayout"
+            android:text="Total: R2000"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_document_scanner_24"
+        app:backgroundTint="@color/black"
+        app:elevation="6dp"
+        app:fabSize="normal">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_checkout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_done_24"
+        app:backgroundTint="@color/black"
+        app:elevation="6dp"
+        app:fabSize="normal">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>
